@@ -111,13 +111,14 @@ const menu = [
     }
 ]
 
-let foods_areaDOM = document.querySelector("#food_area")
+let foods_areaDOM=document.querySelector("#food_area")
 
-function filter(e) {
-    foods_areaDOM.innerHTML = ""
-    menu.forEach(function (obj) {
-        if (obj.country == e.id || obj.category == e.id || e.id == "all") {
-            foods_areaDOM.innerHTML += ` <div class="col p-2">
+function filter(e){
+    foods_areaDOM.innerHTML=""
+menu.forEach(function (obj){
+    if (obj.country==e.id || obj.category==e.id || e.id=="all" || e==window)
+    {
+        foods_areaDOM.innerHTML+=` <div class="col p-2">
         <div class="card mb-3 h-100" style="max-width: 540px;">
             <div class="row">
                 <div class="col-sm-4 d-flex align-items-center">
@@ -136,6 +137,6 @@ function filter(e) {
             </div>
         </div>
     </div>`
-        }
-    })
+    }
+}) 
 }
