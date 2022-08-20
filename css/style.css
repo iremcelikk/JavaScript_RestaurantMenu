@@ -1,0 +1,22 @@
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 56px;
+    font-weight: bolder;
+}
+.card-title{
+    font-weight: bolder;
+    color: darkblue;
+}
+body{
+    background-color:darkgrey;
+}
+.card{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background: radial-gradient(circle, rgba(106,164,209,1) 0%, rgba(227,216,185,0.913585417076987) 100%);
+}
+.card-footer{
+    font-size: 16px;
+    font-weight: bold;
+    color: blue;
+}
